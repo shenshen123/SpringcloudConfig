@@ -6,3 +6,11 @@ spring:
     password: rspkvcnzxestbaif #客户端授权码，不是邮箱密码，这个在qq邮箱设置里面自动生成的
     properties.mail.smtp.port: 587
     from: 635327567@qq.com # 发送邮件的地址，和上面username一致
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wjs?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  jpa:
+    database: MySQL
+    show-sql: true 
