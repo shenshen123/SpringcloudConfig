@@ -1,0 +1,32 @@
+feign:
+  hystrix:
+    enabled: true
+lagou-service-users:
+  ribbon:
+    ConnectTimeout: 2000
+    ReadTimeout: 2000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            # hystrix 超时时长设置
+            timeoutInMilliseconds: 2100
+interceptorconfig:
+  path:
+    exclude:
+      - /api/user/login/**
+      - /api/user/register/**
+      - /api/code/create/**
+    include:
+      - /api/user/**
+      - /api/code/**
+# 自定义防刷爆过滤器
+flush:
+  brush:
+    limitTimeMinute: 1
+    limitCount: 2
