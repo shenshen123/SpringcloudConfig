@@ -17,3 +17,7 @@ spring:
   jpa:
     database: MySQL
     show-sql: true 
+flush:
+  brush:
+    limitTimeMinute: 10
+    limitCount: 100    
