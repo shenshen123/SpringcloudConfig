@@ -30,4 +30,4 @@ interceptorconfig:
 flush:
   brush:
     limitTimeMinute: 1
-    limitCount: 200
+    limitCount: 2
