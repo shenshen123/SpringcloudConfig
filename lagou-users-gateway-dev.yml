@@ -22,6 +22,7 @@ interceptorconfig:
       - /api/user/login/**
       - /api/user/register/**
       - /api/code/create/**
+      - /api/user/info/**
     include:
       - /api/user/**
       - /api/code/**
