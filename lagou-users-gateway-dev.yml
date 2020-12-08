@@ -1,7 +1,7 @@
 feign:
   hystrix:
     enabled: true
-lagou-service-users:
+lagou-service-user:
   ribbon:
     ConnectTimeout: 2000
     ReadTimeout: 2000
